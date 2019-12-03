@@ -67,10 +67,7 @@ public class trx {
             Statement stmt  = conn.createStatement(); //команда которая принимает запросы
             ResultSet rs = stmt.executeQuery(sql);//выполнение запроса
 
-            while (rs.next()) {
-                pointsMap.put(rs.getString("Date"), rs.getInt("Balance"));
 
-            }
 
 
 
